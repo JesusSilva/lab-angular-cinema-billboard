@@ -1,0 +1,23 @@
+<div class="row">
+  <div *ngFor="let pelis of movies" class="col-md-2">
+    
+      <a [routerLink]="['/movie/', pelis.id]">
+        <div>
+          Room {{pelis.id}}
+        </div>
+      </a>
+
+      <a [routerLink]="['/movie/', pelis.id]">
+        <div>
+          <img src="{{pelis.poster}}" alt="" class="img-fluid portada">
+        </div>
+      </a>
+
+      <a [routerLink]="['/movie/', pelis.id]">
+        <div>
+          {{pelis.title}}
+        </div>
+      </a>
+    
+  </div>
+</div>

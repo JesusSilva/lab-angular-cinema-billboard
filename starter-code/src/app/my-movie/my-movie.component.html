@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12">
+    ROOM: {{movies.id}} - {{movies.title}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <img src={{movies.poster}} alt="Portada de la pelicula" class="img-fluid logo">
+  </div>
+  <div class="col-md-8">
+    <p><b>Genres:</b> {{movies.genres}}</p>
+    <p><b>Year:</b> {{movies.year}}</p>
+    <p><b>Director:</b> {{movies.director}}</p>
+    <p><b>Actors:</b>{{movies.actors}}</p>
+    <p><b>Schedule:</b>{{movies.hours}}</p>
+    <p><b>Synopsis:</b> {{movies.synopsis}}</p>
+    <button [routerLink]="['/home']" class="btn btn-info">Home</button>
+  </div>
+</div>
